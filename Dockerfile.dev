@@ -1,5 +1,8 @@
 FROM node:16-alpine
 
+ENV export http_proxy="http://internet.cetin:8080"
+ENV export https_proxy="http://internet.cetin:8080"
+
 WORKDIR '/app'
 
 COPY package.json .
